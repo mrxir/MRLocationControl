@@ -7,49 +7,217 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		164FAFF319A6A915A7C792E1014CFC0A /* Pods-MRLocationControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6718ED1357ECAD0CD86BE667BD4791 /* Pods-MRLocationControl-dummy.m */; };
-		D20BA5ACA7E6F3C004551A8E4A223B02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		0312C3C9CBB3E98A6BD0AB8259FCEA3A /* Pods-MRLocationControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566E17972A3559B7F9E0413454D22E7 /* Pods-MRLocationControl-dummy.m */; };
+		0D8A29A98824821476E279176667BA5C /* MRSearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD27F2D7A5E14501A2ACCAB8BC33D96 /* MRSearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		157B616FAE2A30FA9D4F07C58BC1293C /* UIApplication+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEE92F2E6433BE2AD7D797496146E5B /* UIApplication+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222CA437151EAFC3F7602349CF2578D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		26696A584AFC3424AABCCEB295FA2BAC /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C53ECC7630201EBC90ADABBE5EEB578C /* UIApplication+Extension.m */; };
+		2E4157009ED331734CE5887860D28566 /* MRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B84A50C29CADE148C86A203D29E9F /* MRImageView.m */; };
+		30A0ADBF7C580CDCAA3635D595EB1EF1 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E647D3A6EBF95E5B4C03F306D134FC26 /* NSString+Extension.m */; };
+		32EAAD8D983618449585F99796B65444 /* NSDictionary+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E29371144A1CA35B8402BC7A7BFEA7E5 /* NSDictionary+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		359AD2F19A437D91F86A9F1A268BE558 /* UIControl+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D42A0F0D0E67B673346D05B6CF78AC7 /* UIControl+Extension.m */; };
+		49A70737F2112DAE5FDEE5338F1DE4F9 /* MRFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FFB82BEC07AF6303468845EE62C6DF /* MRFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		518ED28396B687A0490A060BC77B49FF /* MRFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 098E3D7BAEB1CFA88CED8AAEB4D4F6B4 /* MRFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53A17A46A8899B27B35574FFAAB2C40F /* UIStoryboard+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2962FE0928C8B4D6016AD005AEB1B781 /* UIStoryboard+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		540CAEE4ACB3892FFFEFD07C6CFBDF01 /* NSURL+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 807ED108C62025134CC9722CF934A79A /* NSURL+Extension.m */; };
+		561DDDB9214008A73ACC8780773A420E /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B0A5FBFF656E01EC093B46AB5766FF /* NSDictionary+Extension.m */; };
+		5A80DDE58AF619CD601788B93CB69869 /* NSJSONSerialization+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 959E0F5F17FE87EF007D098D9DDB6542 /* NSJSONSerialization+Extension.m */; };
+		60DC8CAC41C5A10406AA6344ADCF0C12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		639AF21B9B848639D9C68F0E92718FD0 /* Pods-MRLocationControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5D6F990546E75F3F97401113E3BD5BA /* Pods-MRLocationControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69FE3F8C6E257C6B2ED6C25508FF00F4 /* UIControl+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 016C4A2B894FE6637A4AE91966005F3B /* UIControl+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B694C22206146072EB521099D9C0D5D /* MRSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B126B9BFE32EFC3BD4AAEA7095DF42CD /* MRSearchBar.xib */; };
+		7A0F9D9AC16B285529D2B56F298FCE3F /* UINavigationBar+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BB0EFF7E06424552F02C96D5E5543B /* UINavigationBar+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82AD778934FDD63A9DB9C0480011542C /* NSString+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = EFAEA81051F2ED919736DCCAE095DE12 /* NSString+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AB65A945F62872AD79D70B606144FD5 /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7ACC80FC388D72E5EDFF9110BBEC0C /* NSObject+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACC577696B6115BC36659443541C4998 /* UINavigationBar+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F6475E1B9BA1DE6599A84ABC9F0002 /* UINavigationBar+Extension.m */; };
+		AFDF1C874453629040317C9EAD71D1ED /* MRImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC66D2F7CCC0835C901D9E83B4C1AC7 /* MRImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3EDFD2BC9A05ADB77B057B54946B3F4 /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 562A594F5BA50D50AF25A73BCC0681D8 /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53F7CCA77ADAA592FBEEDFFE2EAEC76 /* MRSearchBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 073B96F3D985B81C71106F38860608B4 /* MRSearchBar-dummy.m */; };
+		C62131886AC7EB585C7EEDA0A3E70C83 /* MRFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD75099F601F6140A04869847DFBC61 /* MRFramework-dummy.m */; };
+		CB4CA190C97940C577A217D137E9EE3A /* NSJSONSerialization+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = DCAAE7D31B6FA73469843AF80E8ABD2E /* NSJSONSerialization+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC82FE15669EA136A01B8F5D06CD2A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D066A097F3FA4DC98F850D0BBA6846EF /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD402937D5D3091AFFF78F636AA1D37 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4466A25AC064B2330AA563CD922B3F7 /* MRSearchBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 050DF6EB6A14ABFC5AFC659BF15DD025 /* MRSearchBar.bundle */; };
+		D7AEABCC2BCEC983A596E93BB152DC5A /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6D57513E6B57C92B5DB6030E73390 /* NSObject+Extension.m */; };
+		DA4AD3C5AAB6A4556AB63F430E1966B9 /* MRSearchBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE5806FBAA3DF3E2843E3AF0C39EC68C /* MRSearchBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6639190B2E0AF2DB6B239570E24483 /* MRSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B987D7CB03CB116A4AAC7DB6C605F5D8 /* MRSearchBar.m */; };
+		DF83058DB77006A6A14183F463B50AEF /* MRUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C2CBE86C6A97EF53DBDC8FD4288E05A /* MRUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF375BDEEEA8D593CA79807A2B5D28F /* NSURL+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F00C644D4F2BD01A769BCAE3E8353CB /* NSURL+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDFE4AFC47C6AB7E1B052A5A99C8B350 /* UIStoryboard+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CF2EAA1D4EEF8F3203B24CC78C265C /* UIStoryboard+Extension.m */; };
+		F4238A310D68474E8AF5A8BEC4B88BC7 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 940B483DB3B0875B31AED2C7204F9BF3 /* UIImage+Extension.m */; };
+		FCC3CD8703D9DEC38FF14FCB9B74A4DD /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0599595082FDF0168565BCA1957EE862 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		12196BE2BD28782777DF5BF0440A9D98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36EE42C269430F45AF2675D1025E4E4A;
+			remoteInfo = MRFramework;
+		};
+		BFC8F4E376CB7977D993A897842A842D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B0C32A00FD559C62E35F7B77E1BC7DE;
+			remoteInfo = MRSearchBar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		030A07B17F6E002299E600CA87748E62 /* Pods-MRLocationControl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRLocationControl-acknowledgements.plist"; sourceTree = "<group>"; };
-		4BF6E096129AABCB31C143237B340F57 /* Pods-MRLocationControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLocationControl.debug.xcconfig"; sourceTree = "<group>"; };
+		016C4A2B894FE6637A4AE91966005F3B /* UIControl+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+Extension.h"; path = "Classes/UIKit-Extension/UIControl+Extension.h"; sourceTree = "<group>"; };
+		050DF6EB6A14ABFC5AFC659BF15DD025 /* MRSearchBar.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MRSearchBar.bundle; path = Classes/MRSearchBar.bundle; sourceTree = "<group>"; };
+		0599595082FDF0168565BCA1957EE862 /* UIView+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extension.m"; path = "Classes/UIKit-Extension/UIView+Extension.m"; sourceTree = "<group>"; };
+		073B96F3D985B81C71106F38860608B4 /* MRSearchBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRSearchBar-dummy.m"; sourceTree = "<group>"; };
+		098E3D7BAEB1CFA88CED8AAEB4D4F6B4 /* MRFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRFoundation.h; path = "Classes/Foundation-Extension/MRFoundation.h"; sourceTree = "<group>"; };
+		1829B1D3035CDB0C7AD999648A30DE8E /* MRFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MRFramework.modulemap; sourceTree = "<group>"; };
+		24E770F0FC4931841242AE69A5BC5EA2 /* MRSearchBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRSearchBar-prefix.pch"; sourceTree = "<group>"; };
+		2962FE0928C8B4D6016AD005AEB1B781 /* UIStoryboard+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+Extension.h"; path = "Classes/UIKit-Extension/UIStoryboard+Extension.h"; sourceTree = "<group>"; };
+		2A0F53C80D24DD915244E27FC19AD926 /* MRSearchBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MRSearchBar.modulemap; sourceTree = "<group>"; };
+		2F00C644D4F2BD01A769BCAE3E8353CB /* NSURL+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURL+Extension.h"; path = "Classes/Foundation-Extension/NSURL+Extension.h"; sourceTree = "<group>"; };
+		2FC66D2F7CCC0835C901D9E83B4C1AC7 /* MRImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRImageView.h; path = "Classes/UIKit-Extension/MRImageView.h"; sourceTree = "<group>"; };
+		322D62DE5EAE8F57E8B380E3B4D8116B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37BCAB566C051B85CFF3326CD328F649 /* Pods-MRLocationControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MRLocationControl.modulemap"; sourceTree = "<group>"; };
+		3D2B1F928F1298810A86C4B33C09D171 /* MRFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRFramework.xcconfig; sourceTree = "<group>"; };
+		3D42A0F0D0E67B673346D05B6CF78AC7 /* UIControl+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Extension.m"; path = "Classes/UIKit-Extension/UIControl+Extension.m"; sourceTree = "<group>"; };
+		3F7ACC80FC388D72E5EDFF9110BBEC0C /* NSObject+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Extension.h"; path = "Classes/Foundation-Extension/NSObject+Extension.h"; sourceTree = "<group>"; };
+		4408ACF6EA85978B12604B8794F69BF1 /* MRSearchBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MRSearchBar.framework; path = MRSearchBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451E69656389FD877242EB325A9F7CFC /* Pods-MRLocationControl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLocationControl-frameworks.sh"; sourceTree = "<group>"; };
+		4BC01680D4222DE8CE87A928DF3AB40D /* Pods-MRLocationControl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MRLocationControl-acknowledgements.plist"; sourceTree = "<group>"; };
+		50B6D57513E6B57C92B5DB6030E73390 /* NSObject+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extension.m"; path = "Classes/Foundation-Extension/NSObject+Extension.m"; sourceTree = "<group>"; };
+		5566E17972A3559B7F9E0413454D22E7 /* Pods-MRLocationControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRLocationControl-dummy.m"; sourceTree = "<group>"; };
+		562A594F5BA50D50AF25A73BCC0681D8 /* UIImage+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extension.h"; path = "Classes/UIKit-Extension/UIImage+Extension.h"; sourceTree = "<group>"; };
+		5959A1666956C562217BECF7E0ED4EF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7CFFA3D67FBCEF1100D004BB8B39FFED /* Pods-MRLocationControl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLocationControl-resources.sh"; sourceTree = "<group>"; };
+		66BB0EFF7E06424552F02C96D5E5543B /* UINavigationBar+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+Extension.h"; path = "Classes/UIKit-Extension/UINavigationBar+Extension.h"; sourceTree = "<group>"; };
+		6C2CBE86C6A97EF53DBDC8FD4288E05A /* MRUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRUIKit.h; path = "Classes/UIKit-Extension/MRUIKit.h"; sourceTree = "<group>"; };
+		7C1671798914813AF149AE009D30F984 /* Pods-MRLocationControl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLocationControl-resources.sh"; sourceTree = "<group>"; };
+		807ED108C62025134CC9722CF934A79A /* NSURL+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Extension.m"; path = "Classes/Foundation-Extension/NSURL+Extension.m"; sourceTree = "<group>"; };
+		82F6475E1B9BA1DE6599A84ABC9F0002 /* UINavigationBar+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+Extension.m"; path = "Classes/UIKit-Extension/UINavigationBar+Extension.m"; sourceTree = "<group>"; };
+		85FFB82BEC07AF6303468845EE62C6DF /* MRFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRFramework-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE6718ED1357ECAD0CD86BE667BD4791 /* Pods-MRLocationControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MRLocationControl-dummy.m"; sourceTree = "<group>"; };
-		CC1FB9343FD4B1AAA26C42FA73671AAC /* Pods-MRLocationControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLocationControl.release.xcconfig"; sourceTree = "<group>"; };
-		D01855ED8A029DC52F3046366DD899EC /* Pods-MRLocationControl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MRLocationControl-frameworks.sh"; sourceTree = "<group>"; };
-		EFBCE72BA6F6A746F26763CAA41A330D /* libPods-MRLocationControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MRLocationControl.a"; path = "libPods-MRLocationControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD2A3C9E54D4BF7B399F1513A6D5C506 /* Pods-MRLocationControl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRLocationControl-acknowledgements.markdown"; sourceTree = "<group>"; };
+		940B483DB3B0875B31AED2C7204F9BF3 /* UIImage+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Extension.m"; path = "Classes/UIKit-Extension/UIImage+Extension.m"; sourceTree = "<group>"; };
+		959E0F5F17FE87EF007D098D9DDB6542 /* NSJSONSerialization+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSJSONSerialization+Extension.m"; path = "Classes/Foundation-Extension/NSJSONSerialization+Extension.m"; sourceTree = "<group>"; };
+		981AA0DA5546D6F3BE250EB0918A15EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD75099F601F6140A04869847DFBC61 /* MRFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRFramework-dummy.m"; sourceTree = "<group>"; };
+		A31861B1ECBF12D3928F3DB071BEFBDC /* MRFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MRFramework.framework; path = MRFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42B3C47E76CAFFAD5B94F6397A16C7B /* MRSearchBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRSearchBar.xcconfig; sourceTree = "<group>"; };
+		AD5ABE609549E26B626648DF15E16D3D /* Pods-MRLocationControl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MRLocationControl-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B126B9BFE32EFC3BD4AAEA7095DF42CD /* MRSearchBar.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MRSearchBar.xib; path = Classes/MRSearchBar.xib; sourceTree = "<group>"; };
+		B3B0A5FBFF656E01EC093B46AB5766FF /* NSDictionary+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Extension.m"; path = "Classes/Foundation-Extension/NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		B987D7CB03CB116A4AAC7DB6C605F5D8 /* MRSearchBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRSearchBar.m; path = Classes/MRSearchBar.m; sourceTree = "<group>"; };
+		BC15693A5F91655C8D69700D60230DFB /* Pods-MRLocationControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLocationControl.release.xcconfig"; sourceTree = "<group>"; };
+		BDE26CB8F4EBE24DE548D1DB6259ED94 /* MRFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRFramework-prefix.pch"; sourceTree = "<group>"; };
+		C38852939C12F37CBB028A2A5E6B67CE /* Pods_MRLocationControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MRLocationControl.framework; path = "Pods-MRLocationControl.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53ECC7630201EBC90ADABBE5EEB578C /* UIApplication+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+Extension.m"; path = "Classes/UIKit-Extension/UIApplication+Extension.m"; sourceTree = "<group>"; };
+		C5D6F990546E75F3F97401113E3BD5BA /* Pods-MRLocationControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MRLocationControl-umbrella.h"; sourceTree = "<group>"; };
+		CAEE92F2E6433BE2AD7D797496146E5B /* UIApplication+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+Extension.h"; path = "Classes/UIKit-Extension/UIApplication+Extension.h"; sourceTree = "<group>"; };
+		DBD27F2D7A5E14501A2ACCAB8BC33D96 /* MRSearchBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MRSearchBar.h; path = Classes/MRSearchBar.h; sourceTree = "<group>"; };
+		DCAAE7D31B6FA73469843AF80E8ABD2E /* NSJSONSerialization+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSJSONSerialization+Extension.h"; path = "Classes/Foundation-Extension/NSJSONSerialization+Extension.h"; sourceTree = "<group>"; };
+		DF5B84A50C29CADE148C86A203D29E9F /* MRImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MRImageView.m; path = "Classes/UIKit-Extension/MRImageView.m"; sourceTree = "<group>"; };
+		E29371144A1CA35B8402BC7A7BFEA7E5 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Extension.h"; path = "Classes/Foundation-Extension/NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		E2CF2EAA1D4EEF8F3203B24CC78C265C /* UIStoryboard+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+Extension.m"; path = "Classes/UIKit-Extension/UIStoryboard+Extension.m"; sourceTree = "<group>"; };
+		E647D3A6EBF95E5B4C03F306D134FC26 /* NSString+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "Classes/Foundation-Extension/NSString+Extension.m"; sourceTree = "<group>"; };
+		EFAEA81051F2ED919736DCCAE095DE12 /* NSString+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Extension.h"; path = "Classes/Foundation-Extension/NSString+Extension.h"; sourceTree = "<group>"; };
+		FA11F34209653098BE8A2D262F8C9C8E /* Pods-MRLocationControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MRLocationControl.debug.xcconfig"; sourceTree = "<group>"; };
+		FAD402937D5D3091AFFF78F636AA1D37 /* UIView+Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Extension.h"; path = "Classes/UIKit-Extension/UIView+Extension.h"; sourceTree = "<group>"; };
+		FE5806FBAA3DF3E2843E3AF0C39EC68C /* MRSearchBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRSearchBar-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B0EADE165B3E08D1BBAD8CD759BA1DE7 /* Frameworks */ = {
+		67DD15780CBC8367820111D0DCDEECC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20BA5ACA7E6F3C004551A8E4A223B02 /* Foundation.framework in Frameworks */,
+				CC82FE15669EA136A01B8F5D06CD2A3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D666CE2F722D382A68F66E0E8F15669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222CA437151EAFC3F7602349CF2578D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0113D037776102C4D922AC37F61E97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DC8CAC41C5A10406AA6344ADCF0C12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		582FDF47FCF6C8FCC1D14A78799CE80C /* Targets Support Files */ = {
+		266671D1DAD0C1D2A7044E6615CB1A83 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BD069FAF6ACFE74EBAD6BD9966C559C2 /* Pods-MRLocationControl */,
+				050DF6EB6A14ABFC5AFC659BF15DD025 /* MRSearchBar.bundle */,
+				B126B9BFE32EFC3BD4AAEA7095DF42CD /* MRSearchBar.xib */,
 			);
-			name = "Targets Support Files";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		5EFA4E12104737A1A98DC9C073708394 /* Products */ = {
+		3D0B6C6270FD995E862194F8E995DDEB /* Pods-MRLocationControl */ = {
 			isa = PBXGroup;
 			children = (
-				EFBCE72BA6F6A746F26763CAA41A330D /* libPods-MRLocationControl.a */,
+				981AA0DA5546D6F3BE250EB0918A15EA /* Info.plist */,
+				37BCAB566C051B85CFF3326CD328F649 /* Pods-MRLocationControl.modulemap */,
+				AD5ABE609549E26B626648DF15E16D3D /* Pods-MRLocationControl-acknowledgements.markdown */,
+				4BC01680D4222DE8CE87A928DF3AB40D /* Pods-MRLocationControl-acknowledgements.plist */,
+				5566E17972A3559B7F9E0413454D22E7 /* Pods-MRLocationControl-dummy.m */,
+				451E69656389FD877242EB325A9F7CFC /* Pods-MRLocationControl-frameworks.sh */,
+				7C1671798914813AF149AE009D30F984 /* Pods-MRLocationControl-resources.sh */,
+				C5D6F990546E75F3F97401113E3BD5BA /* Pods-MRLocationControl-umbrella.h */,
+				FA11F34209653098BE8A2D262F8C9C8E /* Pods-MRLocationControl.debug.xcconfig */,
+				BC15693A5F91655C8D69700D60230DFB /* Pods-MRLocationControl.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-MRLocationControl";
+			path = "Target Support Files/Pods-MRLocationControl";
+			sourceTree = "<group>";
+		};
+		4B1B9A23BAF215B7692884875737B886 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5959A1666956C562217BECF7E0ED4EF9 /* Info.plist */,
+				1829B1D3035CDB0C7AD999648A30DE8E /* MRFramework.modulemap */,
+				3D2B1F928F1298810A86C4B33C09D171 /* MRFramework.xcconfig */,
+				9FD75099F601F6140A04869847DFBC61 /* MRFramework-dummy.m */,
+				BDE26CB8F4EBE24DE548D1DB6259ED94 /* MRFramework-prefix.pch */,
+				85FFB82BEC07AF6303468845EE62C6DF /* MRFramework-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MRFramework";
+			sourceTree = "<group>";
+		};
+		679E3632D25F76BE363B700CDCE0B453 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				322D62DE5EAE8F57E8B380E3B4D8116B /* Info.plist */,
+				2A0F53C80D24DD915244E27FC19AD926 /* MRSearchBar.modulemap */,
+				A42B3C47E76CAFFAD5B94F6397A16C7B /* MRSearchBar.xcconfig */,
+				073B96F3D985B81C71106F38860608B4 /* MRSearchBar-dummy.m */,
+				24E770F0FC4931841242AE69A5BC5EA2 /* MRSearchBar-prefix.pch */,
+				FE5806FBAA3DF3E2843E3AF0C39EC68C /* MRSearchBar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MRSearchBar";
+			sourceTree = "<group>";
+		};
+		7CB04D72E1C60496E3765A06A6A44079 /* MRSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				DBD27F2D7A5E14501A2ACCAB8BC33D96 /* MRSearchBar.h */,
+				B987D7CB03CB116A4AAC7DB6C605F5D8 /* MRSearchBar.m */,
+				266671D1DAD0C1D2A7044E6615CB1A83 /* Resources */,
+				679E3632D25F76BE363B700CDCE0B453 /* Support Files */,
+			);
+			name = MRSearchBar;
+			path = MRSearchBar;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -57,9 +225,62 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5EFA4E12104737A1A98DC9C073708394 /* Products */,
-				582FDF47FCF6C8FCC1D14A78799CE80C /* Targets Support Files */,
+				83149912473C2DE125F653F3E11FEFD8 /* Pods */,
+				CA20982E1ABA88353975C1E69C0A4AB0 /* Products */,
+				B3DC35297238AB23A3D3BED2F88E3A32 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		83149912473C2DE125F653F3E11FEFD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94F60DAE9849B615CC027ED8B0370978 /* MRFramework */,
+				7CB04D72E1C60496E3765A06A6A44079 /* MRSearchBar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94F60DAE9849B615CC027ED8B0370978 /* MRFramework */ = {
+			isa = PBXGroup;
+			children = (
+				098E3D7BAEB1CFA88CED8AAEB4D4F6B4 /* MRFoundation.h */,
+				2FC66D2F7CCC0835C901D9E83B4C1AC7 /* MRImageView.h */,
+				DF5B84A50C29CADE148C86A203D29E9F /* MRImageView.m */,
+				6C2CBE86C6A97EF53DBDC8FD4288E05A /* MRUIKit.h */,
+				E29371144A1CA35B8402BC7A7BFEA7E5 /* NSDictionary+Extension.h */,
+				B3B0A5FBFF656E01EC093B46AB5766FF /* NSDictionary+Extension.m */,
+				DCAAE7D31B6FA73469843AF80E8ABD2E /* NSJSONSerialization+Extension.h */,
+				959E0F5F17FE87EF007D098D9DDB6542 /* NSJSONSerialization+Extension.m */,
+				3F7ACC80FC388D72E5EDFF9110BBEC0C /* NSObject+Extension.h */,
+				50B6D57513E6B57C92B5DB6030E73390 /* NSObject+Extension.m */,
+				EFAEA81051F2ED919736DCCAE095DE12 /* NSString+Extension.h */,
+				E647D3A6EBF95E5B4C03F306D134FC26 /* NSString+Extension.m */,
+				2F00C644D4F2BD01A769BCAE3E8353CB /* NSURL+Extension.h */,
+				807ED108C62025134CC9722CF934A79A /* NSURL+Extension.m */,
+				CAEE92F2E6433BE2AD7D797496146E5B /* UIApplication+Extension.h */,
+				C53ECC7630201EBC90ADABBE5EEB578C /* UIApplication+Extension.m */,
+				016C4A2B894FE6637A4AE91966005F3B /* UIControl+Extension.h */,
+				3D42A0F0D0E67B673346D05B6CF78AC7 /* UIControl+Extension.m */,
+				562A594F5BA50D50AF25A73BCC0681D8 /* UIImage+Extension.h */,
+				940B483DB3B0875B31AED2C7204F9BF3 /* UIImage+Extension.m */,
+				66BB0EFF7E06424552F02C96D5E5543B /* UINavigationBar+Extension.h */,
+				82F6475E1B9BA1DE6599A84ABC9F0002 /* UINavigationBar+Extension.m */,
+				2962FE0928C8B4D6016AD005AEB1B781 /* UIStoryboard+Extension.h */,
+				E2CF2EAA1D4EEF8F3203B24CC78C265C /* UIStoryboard+Extension.m */,
+				FAD402937D5D3091AFFF78F636AA1D37 /* UIView+Extension.h */,
+				0599595082FDF0168565BCA1957EE862 /* UIView+Extension.m */,
+				4B1B9A23BAF215B7692884875737B886 /* Support Files */,
+			);
+			name = MRFramework;
+			path = MRFramework;
+			sourceTree = "<group>";
+		};
+		B3DC35297238AB23A3D3BED2F88E3A32 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D0B6C6270FD995E862194F8E995DDEB /* Pods-MRLocationControl */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -70,19 +291,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD069FAF6ACFE74EBAD6BD9966C559C2 /* Pods-MRLocationControl */ = {
+		CA20982E1ABA88353975C1E69C0A4AB0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD2A3C9E54D4BF7B399F1513A6D5C506 /* Pods-MRLocationControl-acknowledgements.markdown */,
-				030A07B17F6E002299E600CA87748E62 /* Pods-MRLocationControl-acknowledgements.plist */,
-				BE6718ED1357ECAD0CD86BE667BD4791 /* Pods-MRLocationControl-dummy.m */,
-				D01855ED8A029DC52F3046366DD899EC /* Pods-MRLocationControl-frameworks.sh */,
-				7CFFA3D67FBCEF1100D004BB8B39FFED /* Pods-MRLocationControl-resources.sh */,
-				4BF6E096129AABCB31C143237B340F57 /* Pods-MRLocationControl.debug.xcconfig */,
-				CC1FB9343FD4B1AAA26C42FA73671AAC /* Pods-MRLocationControl.release.xcconfig */,
+				A31861B1ECBF12D3928F3DB071BEFBDC /* MRFramework.framework */,
+				4408ACF6EA85978B12604B8794F69BF1 /* MRSearchBar.framework */,
+				C38852939C12F37CBB028A2A5E6B67CE /* Pods_MRLocationControl.framework */,
 			);
-			name = "Pods-MRLocationControl";
-			path = "Target Support Files/Pods-MRLocationControl";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -95,22 +311,102 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2506643995A03F28792DDB681DEC0777 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639AF21B9B848639D9C68F0E92718FD0 /* Pods-MRLocationControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		353AF178E80659BE65917242287CEC81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4AD3C5AAB6A4556AB63F430E1966B9 /* MRSearchBar-umbrella.h in Headers */,
+				0D8A29A98824821476E279176667BA5C /* MRSearchBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95791ED1347853C245D0FEFF1A345FCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518ED28396B687A0490A060BC77B49FF /* MRFoundation.h in Headers */,
+				49A70737F2112DAE5FDEE5338F1DE4F9 /* MRFramework-umbrella.h in Headers */,
+				AFDF1C874453629040317C9EAD71D1ED /* MRImageView.h in Headers */,
+				DF83058DB77006A6A14183F463B50AEF /* MRUIKit.h in Headers */,
+				32EAAD8D983618449585F99796B65444 /* NSDictionary+Extension.h in Headers */,
+				CB4CA190C97940C577A217D137E9EE3A /* NSJSONSerialization+Extension.h in Headers */,
+				9AB65A945F62872AD79D70B606144FD5 /* NSObject+Extension.h in Headers */,
+				82AD778934FDD63A9DB9C0480011542C /* NSString+Extension.h in Headers */,
+				EDF375BDEEEA8D593CA79807A2B5D28F /* NSURL+Extension.h in Headers */,
+				157B616FAE2A30FA9D4F07C58BC1293C /* UIApplication+Extension.h in Headers */,
+				69FE3F8C6E257C6B2ED6C25508FF00F4 /* UIControl+Extension.h in Headers */,
+				B3EDFD2BC9A05ADB77B057B54946B3F4 /* UIImage+Extension.h in Headers */,
+				7A0F9D9AC16B285529D2B56F298FCE3F /* UINavigationBar+Extension.h in Headers */,
+				53A17A46A8899B27B35574FFAAB2C40F /* UIStoryboard+Extension.h in Headers */,
+				D066A097F3FA4DC98F850D0BBA6846EF /* UIView+Extension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		CE0F56458D65077FA98B4DACB07A5927 /* Pods-MRLocationControl */ = {
+		2B0C32A00FD559C62E35F7B77E1BC7DE /* MRSearchBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61D664033106388DE044E5AF2FAA8186 /* Build configuration list for PBXNativeTarget "Pods-MRLocationControl" */;
+			buildConfigurationList = A641F283EF223165333DA484EF16E089 /* Build configuration list for PBXNativeTarget "MRSearchBar" */;
 			buildPhases = (
-				23F7E18A6C8F438B81C5D32C64012183 /* Sources */,
-				B0EADE165B3E08D1BBAD8CD759BA1DE7 /* Frameworks */,
+				83A77692834CE85DE37E6D11B32CE11E /* Sources */,
+				AB0113D037776102C4D922AC37F61E97 /* Frameworks */,
+				353AF178E80659BE65917242287CEC81 /* Headers */,
+				FC9AE5C44A6003F9DFC5ACFD1240AD10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = MRSearchBar;
+			productName = MRSearchBar;
+			productReference = 4408ACF6EA85978B12604B8794F69BF1 /* MRSearchBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36EE42C269430F45AF2675D1025E4E4A /* MRFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C5C29CE305038905E466FA1E17515E5 /* Build configuration list for PBXNativeTarget "MRFramework" */;
+			buildPhases = (
+				721420C3163399EA1308A564E0E8BBCD /* Sources */,
+				67DD15780CBC8367820111D0DCDEECC2 /* Frameworks */,
+				95791ED1347853C245D0FEFF1A345FCB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRFramework;
+			productName = MRFramework;
+			productReference = A31861B1ECBF12D3928F3DB071BEFBDC /* MRFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD206D3AA7446A8A8C29BA49264394A9 /* Pods-MRLocationControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F1B087CEBF3D598C0CC5CF220682249 /* Build configuration list for PBXNativeTarget "Pods-MRLocationControl" */;
+			buildPhases = (
+				76AE349C3F0BAA9C7FA2528CF6ABCB70 /* Sources */,
+				6D666CE2F722D382A68F66E0E8F15669 /* Frameworks */,
+				2506643995A03F28792DDB681DEC0777 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDFB5822EF3FD429EDB65BFE280EE7A7 /* PBXTargetDependency */,
+				7796A388C71C340FD8D3DC1196CDDDDB /* PBXTargetDependency */,
+			);
 			name = "Pods-MRLocationControl";
 			productName = "Pods-MRLocationControl";
-			productReference = EFBCE72BA6F6A746F26763CAA41A330D /* libPods-MRLocationControl.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = C38852939C12F37CBB028A2A5E6B67CE /* Pods_MRLocationControl.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -129,162 +425,380 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5EFA4E12104737A1A98DC9C073708394 /* Products */;
+			productRefGroup = CA20982E1ABA88353975C1E69C0A4AB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE0F56458D65077FA98B4DACB07A5927 /* Pods-MRLocationControl */,
+				36EE42C269430F45AF2675D1025E4E4A /* MRFramework */,
+				2B0C32A00FD559C62E35F7B77E1BC7DE /* MRSearchBar */,
+				BD206D3AA7446A8A8C29BA49264394A9 /* Pods-MRLocationControl */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		FC9AE5C44A6003F9DFC5ACFD1240AD10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4466A25AC064B2330AA563CD922B3F7 /* MRSearchBar.bundle in Resources */,
+				6B694C22206146072EB521099D9C0D5D /* MRSearchBar.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		23F7E18A6C8F438B81C5D32C64012183 /* Sources */ = {
+		721420C3163399EA1308A564E0E8BBCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				164FAFF319A6A915A7C792E1014CFC0A /* Pods-MRLocationControl-dummy.m in Sources */,
+				C62131886AC7EB585C7EEDA0A3E70C83 /* MRFramework-dummy.m in Sources */,
+				2E4157009ED331734CE5887860D28566 /* MRImageView.m in Sources */,
+				561DDDB9214008A73ACC8780773A420E /* NSDictionary+Extension.m in Sources */,
+				5A80DDE58AF619CD601788B93CB69869 /* NSJSONSerialization+Extension.m in Sources */,
+				D7AEABCC2BCEC983A596E93BB152DC5A /* NSObject+Extension.m in Sources */,
+				30A0ADBF7C580CDCAA3635D595EB1EF1 /* NSString+Extension.m in Sources */,
+				540CAEE4ACB3892FFFEFD07C6CFBDF01 /* NSURL+Extension.m in Sources */,
+				26696A584AFC3424AABCCEB295FA2BAC /* UIApplication+Extension.m in Sources */,
+				359AD2F19A437D91F86A9F1A268BE558 /* UIControl+Extension.m in Sources */,
+				F4238A310D68474E8AF5A8BEC4B88BC7 /* UIImage+Extension.m in Sources */,
+				ACC577696B6115BC36659443541C4998 /* UINavigationBar+Extension.m in Sources */,
+				EDFE4AFC47C6AB7E1B052A5A99C8B350 /* UIStoryboard+Extension.m in Sources */,
+				FCC3CD8703D9DEC38FF14FCB9B74A4DD /* UIView+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76AE349C3F0BAA9C7FA2528CF6ABCB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0312C3C9CBB3E98A6BD0AB8259FCEA3A /* Pods-MRLocationControl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A77692834CE85DE37E6D11B32CE11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C53F7CCA77ADAA592FBEEDFFE2EAEC76 /* MRSearchBar-dummy.m in Sources */,
+				DB6639190B2E0AF2DB6B239570E24483 /* MRSearchBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7796A388C71C340FD8D3DC1196CDDDDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MRSearchBar;
+			target = 2B0C32A00FD559C62E35F7B77E1BC7DE /* MRSearchBar */;
+			targetProxy = BFC8F4E376CB7977D993A897842A842D /* PBXContainerItemProxy */;
+		};
+		CDFB5822EF3FD429EDB65BFE280EE7A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MRFramework;
+			target = 36EE42C269430F45AF2675D1025E4E4A /* MRFramework */;
+			targetProxy = 12196BE2BD28782777DF5BF0440A9D98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */ = {
+		03C567B30009F044B1CE89022D009B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA11F34209653098BE8A2D262F8C9C8E /* Pods-MRLocationControl.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRLocationControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRLocationControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F1ADE5CB8FC2B77F9198190F5CAD5CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A42B3C47E76CAFFAD5B94F6397A16C7B /* MRSearchBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MRSearchBar/MRSearchBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRSearchBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRSearchBar/MRSearchBar.modulemap";
+				PRODUCT_NAME = MRSearchBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D0F08CA6D414D07D48070B11155BE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2B1F928F1298810A86C4B33C09D171 /* MRFramework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MRFramework/MRFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRFramework/MRFramework.modulemap";
+				PRODUCT_NAME = MRFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73CA03D1230E93A913AFA632C9ED9F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A42B3C47E76CAFFAD5B94F6397A16C7B /* MRSearchBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MRSearchBar/MRSearchBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRSearchBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRSearchBar/MRSearchBar.modulemap";
+				PRODUCT_NAME = MRSearchBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B9C49D9482C73B32606C98A028FF7593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2B1F928F1298810A86C4B33C09D171 /* MRFramework.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MRFramework/MRFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRFramework/MRFramework.modulemap";
+				PRODUCT_NAME = MRFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF447B5D35AB5ABA291F5643F3538649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC15693A5F91655C8D69700D60230DFB /* Pods-MRLocationControl.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MRLocationControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MRLocationControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		472D5C72E639387599D206C5319314E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC1FB9343FD4B1AAA26C42FA73671AAC /* Pods-MRLocationControl.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C13A86954BA64974C89F505FE7903105 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BF6E096129AABCB31C143237B340F57 /* Pods-MRLocationControl.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MACH_O_TYPE = staticlib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
@@ -294,17 +808,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B5A8DE2EC6E5A64185B0A167D0A4AD1 /* Debug */,
-				ABC1C622E3A94D5EFA80B6DBB5E64193 /* Release */,
+				E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */,
+				B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61D664033106388DE044E5AF2FAA8186 /* Build configuration list for PBXNativeTarget "Pods-MRLocationControl" */ = {
+		3C5C29CE305038905E466FA1E17515E5 /* Build configuration list for PBXNativeTarget "MRFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C13A86954BA64974C89F505FE7903105 /* Debug */,
-				472D5C72E639387599D206C5319314E9 /* Release */,
+				6D0F08CA6D414D07D48070B11155BE58 /* Debug */,
+				B9C49D9482C73B32606C98A028FF7593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F1B087CEBF3D598C0CC5CF220682249 /* Build configuration list for PBXNativeTarget "Pods-MRLocationControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C567B30009F044B1CE89022D009B50 /* Debug */,
+				DF447B5D35AB5ABA291F5643F3538649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A641F283EF223165333DA484EF16E089 /* Build configuration list for PBXNativeTarget "MRSearchBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73CA03D1230E93A913AFA632C9ED9F26 /* Debug */,
+				3F1ADE5CB8FC2B77F9198190F5CAD5CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

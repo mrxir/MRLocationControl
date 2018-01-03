@@ -15,11 +15,14 @@
 		6710C44A1FFCC29E00490A50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6710C4491FFCC29E00490A50 /* main.m */; };
 		6710C4531FFCC3C100490A50 /* MRLocationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6710C4521FFCC3C100490A50 /* MRLocationControl.m */; };
 		6710C4571FFCC3F400490A50 /* MRLocationControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6710C4561FFCC3F400490A50 /* MRLocationControl.xib */; };
-		E82D1E9A3737248CD47DEBC9 /* libPods-MRLocationControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51DA166E72AFE0E354F3D94A /* libPods-MRLocationControl.a */; };
+		6710C45A1FFCC56F00490A50 /* MRLocationControl.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6710C4591FFCC56F00490A50 /* MRLocationControl.podspec */; };
+		6710C45C1FFCCE9000490A50 /* MRLocationControl.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6710C45B1FFCCE8F00490A50 /* MRLocationControl.xcassets */; };
+		6710C45E1FFCD20800490A50 /* MRLocationControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6710C45D1FFCD20800490A50 /* MRLocationControl.storyboard */; };
+		67CD16621FFD07DF0062D9E6 /* MRLocationCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16611FFD07DF0062D9E6 /* MRLocationCityController.m */; };
+		D9151EF8D0A44146759803C9 /* Pods_MRLocationControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2866F940BB141429CC91C5A /* Pods_MRLocationControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		51DA166E72AFE0E354F3D94A /* libPods-MRLocationControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRLocationControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6710C4371FFCC29E00490A50 /* MRLocationControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRLocationControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6710C43A1FFCC29E00490A50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6710C43B1FFCC29E00490A50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,8 +36,14 @@
 		6710C4511FFCC3C100490A50 /* MRLocationControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRLocationControl.h; sourceTree = "<group>"; };
 		6710C4521FFCC3C100490A50 /* MRLocationControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRLocationControl.m; sourceTree = "<group>"; };
 		6710C4561FFCC3F400490A50 /* MRLocationControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MRLocationControl.xib; sourceTree = "<group>"; };
+		6710C4591FFCC56F00490A50 /* MRLocationControl.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MRLocationControl.podspec; sourceTree = "<group>"; };
+		6710C45B1FFCCE8F00490A50 /* MRLocationControl.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MRLocationControl.xcassets; sourceTree = "<group>"; };
+		6710C45D1FFCD20800490A50 /* MRLocationControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MRLocationControl.storyboard; sourceTree = "<group>"; };
+		67CD16601FFD07DF0062D9E6 /* MRLocationCityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRLocationCityController.h; sourceTree = "<group>"; };
+		67CD16611FFD07DF0062D9E6 /* MRLocationCityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRLocationCityController.m; sourceTree = "<group>"; };
 		7B7934FE94A44D4BA672724A /* Pods-MRLocationControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLocationControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl.release.xcconfig"; sourceTree = "<group>"; };
 		D813F2770643EEA30C7E4D44 /* Pods-MRLocationControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLocationControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl.debug.xcconfig"; sourceTree = "<group>"; };
+		F2866F940BB141429CC91C5A /* Pods_MRLocationControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRLocationControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82D1E9A3737248CD47DEBC9 /* libPods-MRLocationControl.a in Frameworks */,
+				D9151EF8D0A44146759803C9 /* Pods_MRLocationControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 		6710C42E1FFCC29E00490A50 = {
 			isa = PBXGroup;
 			children = (
+				6710C4591FFCC56F00490A50 /* MRLocationControl.podspec */,
 				6710C4501FFCC38800490A50 /* Classes */,
 				6710C4391FFCC29E00490A50 /* MRLocationControl */,
 				6710C4381FFCC29E00490A50 /* Products */,
@@ -98,23 +108,19 @@
 			children = (
 				6710C4511FFCC3C100490A50 /* MRLocationControl.h */,
 				6710C4521FFCC3C100490A50 /* MRLocationControl.m */,
+				67CD16601FFD07DF0062D9E6 /* MRLocationCityController.h */,
+				67CD16611FFD07DF0062D9E6 /* MRLocationCityController.m */,
 				6710C4561FFCC3F400490A50 /* MRLocationControl.xib */,
-				6710C4581FFCC3FA00490A50 /* MRLocationControl */,
+				6710C45D1FFCD20800490A50 /* MRLocationControl.storyboard */,
+				6710C45B1FFCCE8F00490A50 /* MRLocationControl.xcassets */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		6710C4581FFCC3FA00490A50 /* MRLocationControl */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MRLocationControl;
 			sourceTree = "<group>";
 		};
 		FD438D3FCA115CF6B67C8224 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51DA166E72AFE0E354F3D94A /* libPods-MRLocationControl.a */,
+				F2866F940BB141429CC91C5A /* Pods_MRLocationControl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,9 +186,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6710C45E1FFCD20800490A50 /* MRLocationControl.storyboard in Resources */,
 				6710C4471FFCC29E00490A50 /* LaunchScreen.storyboard in Resources */,
+				6710C45C1FFCCE9000490A50 /* MRLocationControl.xcassets in Resources */,
 				6710C4441FFCC29E00490A50 /* Assets.xcassets in Resources */,
 				6710C4421FFCC29E00490A50 /* Main.storyboard in Resources */,
+				6710C45A1FFCC56F00490A50 /* MRLocationControl.podspec in Resources */,
 				6710C4571FFCC3F400490A50 /* MRLocationControl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,13 +205,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MRLocationControl-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		16A14430566FF703F33DC82A /* [CP] Copy Pods Resources */ = {
@@ -211,9 +223,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl-resources.sh",
+				"${PODS_ROOT}/MRSearchBar/Classes/MRSearchBar.xib",
+				"${PODS_ROOT}/MRSearchBar/Classes/MRSearchBar.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -226,9 +242,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MRFramework/MRFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/MRSearchBar/MRSearchBar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRSearchBar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -246,6 +267,7 @@
 				6710C44A1FFCC29E00490A50 /* main.m in Sources */,
 				6710C43C1FFCC29E00490A50 /* AppDelegate.m in Sources */,
 				6710C4531FFCC3C100490A50 /* MRLocationControl.m in Sources */,
+				67CD16621FFD07DF0062D9E6 /* MRLocationCityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4HXKSPK349;
 				INFOPLIST_FILE = MRLocationControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrxir.MRLocationControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4HXKSPK349;
 				INFOPLIST_FILE = MRLocationControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrxir.MRLocationControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";

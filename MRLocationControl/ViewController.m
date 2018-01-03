@@ -8,15 +8,32 @@
 
 #import "ViewController.h"
 
+#import "MRLocationControl.h"
+
+#import "MRLocationCityController.h"
+
 @interface ViewController ()
+
+@property (nonatomic, weak) IBOutlet MRLocationControl *locationControl;
 
 @end
 
 @implementation ViewController
 
+- (void)showLocationController
+{
+    UINavigationController *city = [[UIStoryboard storyboardWithName:@"MRLocationControl" bundle:nil] instantiateInitialViewController];
+    [self presentViewController:city animated:YES completion:NULL];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.locationControl addTarget:self action:@selector(showLocationController) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.locationControl.layer.borderWidth = 2;
 }
 
 

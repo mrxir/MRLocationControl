@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2Zx-nO-Ue2" customClass="MRSearchBar">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efJ-8Y-stf">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meS-r5-GaR">
+                    <rect key="frame" x="15" y="8" width="235" height="28"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqh-uo-5Pp">
+                            <rect key="frame" x="175" y="0.0" width="60" height="28"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gy-aL-e2m">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="28"/>
+                                    <state key="normal" title="取消"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="7Gy-aL-e2m" secondAttribute="bottom" id="2Dq-0l-FXN"/>
+                                <constraint firstItem="7Gy-aL-e2m" firstAttribute="leading" secondItem="eqh-uo-5Pp" secondAttribute="leading" id="3Zb-7i-mhS"/>
+                                <constraint firstAttribute="width" constant="60" id="BPy-Mp-Akc"/>
+                                <constraint firstAttribute="trailing" secondItem="7Gy-aL-e2m" secondAttribute="trailing" id="GTV-ZJ-0tr"/>
+                                <constraint firstItem="7Gy-aL-e2m" firstAttribute="top" secondItem="eqh-uo-5Pp" secondAttribute="top" id="Hyb-40-T9C"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2W1-JQ-pzc">
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="28"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aga-M1-8Tb">
+                                    <rect key="frame" x="0.0" y="0.0" width="175" height="28"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="aga-M1-8Tb" secondAttribute="trailing" id="VA6-mm-wfh"/>
+                                <constraint firstItem="aga-M1-8Tb" firstAttribute="top" secondItem="2W1-JQ-pzc" secondAttribute="top" id="mJm-zA-f90"/>
+                                <constraint firstAttribute="bottom" secondItem="aga-M1-8Tb" secondAttribute="bottom" id="t21-SP-ABI"/>
+                                <constraint firstItem="aga-M1-8Tb" firstAttribute="leading" secondItem="2W1-JQ-pzc" secondAttribute="leading" id="thn-FX-Djp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2W1-JQ-pzc" firstAttribute="leading" secondItem="meS-r5-GaR" secondAttribute="leading" id="8oR-ot-bjs"/>
+                        <constraint firstItem="2W1-JQ-pzc" firstAttribute="top" secondItem="meS-r5-GaR" secondAttribute="top" id="GB8-iB-X9j"/>
+                        <constraint firstAttribute="bottom" secondItem="2W1-JQ-pzc" secondAttribute="bottom" id="GGf-iI-Fz5"/>
+                        <constraint firstItem="eqh-uo-5Pp" firstAttribute="leading" secondItem="2W1-JQ-pzc" secondAttribute="trailing" id="H6K-n0-Asr"/>
+                        <constraint firstAttribute="bottom" secondItem="eqh-uo-5Pp" secondAttribute="bottom" id="Ibp-0V-EkV"/>
+                        <constraint firstAttribute="trailing" secondItem="eqh-uo-5Pp" secondAttribute="trailing" id="aee-PR-Vro"/>
+                        <constraint firstItem="eqh-uo-5Pp" firstAttribute="top" secondItem="meS-r5-GaR" secondAttribute="top" id="jLx-dR-MeU"/>
+                        <constraint firstAttribute="height" constant="28" id="pWE-cn-80S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="meS-r5-GaR" firstAttribute="centerY" secondItem="2Zx-nO-Ue2" secondAttribute="centerY" id="8dI-4u-MT4"/>
+                <constraint firstItem="efJ-8Y-stf" firstAttribute="leading" secondItem="2Zx-nO-Ue2" secondAttribute="leading" id="JPF-M3-dBC"/>
+                <constraint firstItem="efJ-8Y-stf" firstAttribute="top" secondItem="2Zx-nO-Ue2" secondAttribute="top" id="Qzi-hl-dhx"/>
+                <constraint firstItem="meS-r5-GaR" firstAttribute="leading" secondItem="2Zx-nO-Ue2" secondAttribute="leading" constant="15" id="RB6-YX-OxK"/>
+                <constraint firstAttribute="trailing" secondItem="meS-r5-GaR" secondAttribute="trailing" id="XHt-jU-QOC"/>
+                <constraint firstAttribute="bottom" secondItem="efJ-8Y-stf" secondAttribute="bottom" id="sWh-Ye-Xda"/>
+                <constraint firstAttribute="trailing" secondItem="efJ-8Y-stf" secondAttribute="trailing" id="zid-gn-oHf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="efJ-8Y-stf" id="GV2-3J-6uH"/>
+                <outlet property="cancelButton" destination="7Gy-aL-e2m" id="9iQ-i5-bDc"/>
+                <outlet property="contentView" destination="meS-r5-GaR" id="R5L-HT-fKt"/>
+                <outlet property="textField" destination="aga-M1-8Tb" id="ql9-Ro-49f"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="-912"/>
+        </view>
+    </objects>
+</document>

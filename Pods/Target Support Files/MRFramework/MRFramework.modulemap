@@ -1,0 +1,6 @@
+framework module MRFramework {
+  umbrella header "MRFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

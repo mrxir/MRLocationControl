@@ -1,0 +1,6 @@
+framework module MRSearchBar {
+  umbrella header "MRSearchBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

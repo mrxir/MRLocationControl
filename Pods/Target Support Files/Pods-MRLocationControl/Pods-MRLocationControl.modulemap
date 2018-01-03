@@ -1,0 +1,6 @@
+framework module Pods_MRLocationControl {
+  umbrella header "Pods-MRLocationControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
