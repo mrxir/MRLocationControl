@@ -22,7 +22,7 @@
 
 - (void)showLocationController
 {
-    UINavigationController *city = [[UIStoryboard storyboardWithName:@"MRLocationControl" bundle:nil] instantiateInitialViewController];
+    UINavigationController *city = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"location"];
     [self presentViewController:city animated:YES completion:NULL];
     
 }
@@ -33,7 +33,14 @@
     
     [self.locationControl addTarget:self action:@selector(showLocationController) forControlEvents:UIControlEventTouchUpInside];
     
-    self.locationControl.layer.borderWidth = 2;
+    self.locationControl.alwaysDisplayAlertWhenLocationDisabled = YES;
+    self.locationControl.alwaysUseLocation = YES;
+    self.locationControl.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+    [self.locationControl startLocate];
+    self.locationControl.locationCompletion = ^(MRLocationControl *locationControl, CLPlacemark *placemark, NSError *error) {
+        NSLog(@"城市: %@", placemark.locality);
+    };
+    
 }
 
 

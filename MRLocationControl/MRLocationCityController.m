@@ -14,14 +14,24 @@
 
 @implementation MRLocationCityController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIBarButtonItem *dismissItem = self.navigationItem.leftBarButtonItem;
+    [dismissItem setTarget:self];
+    [dismissItem setAction:@selector(dismiss)];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dismiss
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 /*

@@ -17,8 +17,7 @@
 		6710C4571FFCC3F400490A50 /* MRLocationControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6710C4561FFCC3F400490A50 /* MRLocationControl.xib */; };
 		6710C45A1FFCC56F00490A50 /* MRLocationControl.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6710C4591FFCC56F00490A50 /* MRLocationControl.podspec */; };
 		6710C45C1FFCCE9000490A50 /* MRLocationControl.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6710C45B1FFCCE8F00490A50 /* MRLocationControl.xcassets */; };
-		6710C45E1FFCD20800490A50 /* MRLocationControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6710C45D1FFCD20800490A50 /* MRLocationControl.storyboard */; };
-		67CD16621FFD07DF0062D9E6 /* MRLocationCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CD16611FFD07DF0062D9E6 /* MRLocationCityController.m */; };
+		677A973E200371320076557A /* MRLocationCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677A973B200371320076557A /* MRLocationCityController.m */; };
 		D9151EF8D0A44146759803C9 /* Pods_MRLocationControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2866F940BB141429CC91C5A /* Pods_MRLocationControl.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +37,8 @@
 		6710C4561FFCC3F400490A50 /* MRLocationControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MRLocationControl.xib; sourceTree = "<group>"; };
 		6710C4591FFCC56F00490A50 /* MRLocationControl.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MRLocationControl.podspec; sourceTree = "<group>"; };
 		6710C45B1FFCCE8F00490A50 /* MRLocationControl.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MRLocationControl.xcassets; sourceTree = "<group>"; };
-		6710C45D1FFCD20800490A50 /* MRLocationControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MRLocationControl.storyboard; sourceTree = "<group>"; };
-		67CD16601FFD07DF0062D9E6 /* MRLocationCityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRLocationCityController.h; sourceTree = "<group>"; };
-		67CD16611FFD07DF0062D9E6 /* MRLocationCityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRLocationCityController.m; sourceTree = "<group>"; };
+		677A973B200371320076557A /* MRLocationCityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRLocationCityController.m; sourceTree = "<group>"; };
+		677A973C200371320076557A /* MRLocationCityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRLocationCityController.h; sourceTree = "<group>"; };
 		7B7934FE94A44D4BA672724A /* Pods-MRLocationControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLocationControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl.release.xcconfig"; sourceTree = "<group>"; };
 		D813F2770643EEA30C7E4D44 /* Pods-MRLocationControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRLocationControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRLocationControl/Pods-MRLocationControl.debug.xcconfig"; sourceTree = "<group>"; };
 		F2866F940BB141429CC91C5A /* Pods_MRLocationControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MRLocationControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +92,8 @@
 				6710C43B1FFCC29E00490A50 /* AppDelegate.m */,
 				6710C43D1FFCC29E00490A50 /* ViewController.h */,
 				6710C43E1FFCC29E00490A50 /* ViewController.m */,
+				677A973C200371320076557A /* MRLocationCityController.h */,
+				677A973B200371320076557A /* MRLocationCityController.m */,
 				6710C4401FFCC29E00490A50 /* Main.storyboard */,
 				6710C4431FFCC29E00490A50 /* Assets.xcassets */,
 				6710C4451FFCC29E00490A50 /* LaunchScreen.storyboard */,
@@ -108,10 +108,7 @@
 			children = (
 				6710C4511FFCC3C100490A50 /* MRLocationControl.h */,
 				6710C4521FFCC3C100490A50 /* MRLocationControl.m */,
-				67CD16601FFD07DF0062D9E6 /* MRLocationCityController.h */,
-				67CD16611FFD07DF0062D9E6 /* MRLocationCityController.m */,
 				6710C4561FFCC3F400490A50 /* MRLocationControl.xib */,
-				6710C45D1FFCD20800490A50 /* MRLocationControl.storyboard */,
 				6710C45B1FFCCE8F00490A50 /* MRLocationControl.xcassets */,
 			);
 			path = Classes;
@@ -186,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6710C45E1FFCD20800490A50 /* MRLocationControl.storyboard in Resources */,
 				6710C4471FFCC29E00490A50 /* LaunchScreen.storyboard in Resources */,
 				6710C45C1FFCCE9000490A50 /* MRLocationControl.xcassets in Resources */,
 				6710C4441FFCC29E00490A50 /* Assets.xcassets in Resources */,
@@ -267,7 +263,7 @@
 				6710C44A1FFCC29E00490A50 /* main.m in Sources */,
 				6710C43C1FFCC29E00490A50 /* AppDelegate.m in Sources */,
 				6710C4531FFCC3C100490A50 /* MRLocationControl.m in Sources */,
-				67CD16621FFD07DF0062D9E6 /* MRLocationCityController.m in Sources */,
+				677A973E200371320076557A /* MRLocationCityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
