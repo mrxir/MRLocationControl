@@ -12,6 +12,8 @@
 
 #import "MRLocationCityController.h"
 
+#import <MRFramework/MRFoundation.h>
+
 @interface ViewController ()
 
 @property (nonatomic, weak) IBOutlet MRLocationControl *locationControl;
@@ -20,9 +22,29 @@
 
 @implementation ViewController
 
+#pragma mark - setter and getter
+
+- (void)setSelectedCity:(NSString *)selectedCity
+{
+    _selectedCity = selectedCity;
+    
+    [self.locationControl.geocoder cancelGeocode];
+    
+    [self stop];
+    
+    [self.locationControl.titleButton setTitle:[selectedCity stringByReplacingOccurrencesOfString:@"市" withString:@""]
+                                      forState:UIControlStateNormal];
+    
+}
+
 - (void)showLocationController
 {
     UINavigationController *city = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"location"];
+    
+    if ([city.viewControllers.firstObject respondsToSelector:@selector(setViewControllerDelegate:)]) {
+        [city.viewControllers.firstObject performSelector:@selector(setViewControllerDelegate:) withObject:self];
+    }
+    
     [self presentViewController:city animated:YES completion:NULL];
     
 }
@@ -31,16 +53,73 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self.locationControl addTarget:self action:@selector(showLocationController) forControlEvents:UIControlEventTouchUpInside];
+    [self.locationControl.titleButton addTarget:self action:@selector(showLocationController) forControlEvents:UIControlEventTouchUpInside];
     
+    [self.locationControl.titleButton setTitle:@"定位中..." forState:UIControlStateNormal];
     self.locationControl.alwaysDisplayAlertWhenLocationDisabled = YES;
     self.locationControl.alwaysUseLocation = YES;
     self.locationControl.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
-    [self.locationControl startLocate];
     self.locationControl.locationCompletion = ^(MRLocationControl *locationControl, CLPlacemark *placemark, NSError *error) {
-        NSLog(@"城市: %@", placemark.locality);
+        
+        if (error) {
+            NSLog(@"定位失败: %@", error);
+        } else {
+            NSLog(@"\n\n地标: %@\n", placemark);
+            NSLog(@"\n定位成功: %@", placemark.addressDictionary.stringWithUTF8);
+            
+            [self stop];
+            
+            if (self.selectedCity) {
+                
+                [locationControl.titleButton setTitle:[self.selectedCity stringByReplacingOccurrencesOfString:@"市" withString:@""]
+                                             forState:UIControlStateNormal];
+                
+            } else {
+
+                [locationControl.titleButton setTitle:[placemark.locality stringByReplacingOccurrencesOfString:@"市" withString:@""]
+                                             forState:UIControlStateNormal];
+
+            }
+            
+            
+        }
+        
     };
     
+}
+
+- (void)start
+{
+    if (!self.selectedCity) {
+        
+        [self.locationControl startLocate];
+        
+        [UIView animateWithDuration:1 delay:0.3 options:UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.locationControl.leftImageView.transform = CGAffineTransformMakeTranslation(0, 4);
+        } completion:NULL];
+    }
+}
+
+- (void)stop
+{
+    [self.locationControl stopLoacte];
+    
+    self.locationControl.leftImageView.transform = CGAffineTransformIdentity;
+    [self.locationControl.leftImageView.layer removeAllAnimations];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self start];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [self stop];
 }
 
 

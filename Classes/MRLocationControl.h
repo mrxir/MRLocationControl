@@ -16,15 +16,21 @@ typedef void(^MRLocationCompletion)(MRLocationControl *locationControl, CLPlacem
 
 @interface MRLocationControl : UIControl
 
-@property (nonatomic, strong, readonly) CLLocationManager *locationManager;
-
-@property (nonatomic, strong, readonly) CLGeocoder *geocoder;
+@property (nonatomic, strong) MRLocationCompletion locationCompletion;
 
 @property (nonatomic, assign, getter=isAlwaysUseLocation) BOOL alwaysUseLocation;
 
 @property (nonatomic, assign, getter=isAlwaysDisplayAlertWhenLocationDisabled) BOOL alwaysDisplayAlertWhenLocationDisabled;
 
-@property (nonatomic, strong) MRLocationCompletion locationCompletion;
+@property (nonatomic, strong, readonly) CLLocationManager *locationManager;
+
+@property (nonatomic, strong, readonly) CLGeocoder *geocoder;
+
+@property (nonatomic, weak) IBOutlet UIButton *titleButton;
+
+@property (nonatomic, weak) IBOutlet UIImageView *leftImageView;
+
+@property (nonatomic, weak) IBOutlet UIImageView *rightImageView;
 
 - (void)startLocate;
 

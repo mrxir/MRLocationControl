@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ViewController.h"
+
 @interface MRLocationCityController : UIViewController
+
+@property (nonatomic, assign) ViewController *viewControllerDelegate;
 
 @end

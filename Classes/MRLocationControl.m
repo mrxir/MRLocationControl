@@ -30,7 +30,6 @@
 
 - (void)dealloc
 {
-    NSLog(@"%s", __FUNCTION__);
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
@@ -101,6 +100,8 @@
 {
     [self.locationManager stopUpdatingLocation];
     
+    self.locationServiceUpdating = NO;
+    
     self.observerEnabled = NO;
 }
 
@@ -125,8 +126,6 @@
     if (![CLLocationManager locationServicesEnabled]) {
         
         locationServicesEnabled = NO;
-        
-        NSLog(@"定位服务未开启");
 
         if (![@"locationServicesEnabled" isEqualToString:self.displayingAlertStatus]) {
             
@@ -161,13 +160,9 @@
 
             [self requestUserLocation];
             
-            NSLog(@"未定义");
-            
         } else if (status == kCLAuthorizationStatusRestricted) {
             
             locationServicesEnabled = NO;
-            
-            NSLog(@"系统定位服务未开启，用户无法改变");
             
             if (![@"kCLAuthorizationStatusRestricted" isEqualToString:self.displayingAlertStatus]) {
                 
@@ -194,8 +189,6 @@
             
             locationServicesEnabled = NO;
             
-            NSLog(@"用户已拒绝");
-            
             if (![@"kCLAuthorizationStatusDenied" isEqualToString:self.displayingAlertStatus]) {
                 
                 self.displayingAlert.delegate = nil;
@@ -220,8 +213,6 @@
         } else {
             
             locationServicesEnabled = YES;
-            
-            NSLog(@"定位服务可用");
             
             if (self.displayingAlert) {
                 self.displayingAlert.delegate = nil;
