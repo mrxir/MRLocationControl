@@ -42,7 +42,7 @@
                                                     <constraint firstAttribute="width" constant="24" id="UIm-el-0Xf"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" image="location.png"/>
+                                                <state key="normal" image="location"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Y5-pn-usM">
                                                 <rect key="frame" x="75" y="9" width="20" height="32"/>
@@ -51,7 +51,7 @@
                                                     <constraint firstAttribute="width" constant="20" id="Ofg-Or-bld"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" image="downArrow.png"/>
+                                                <state key="normal" image="downArrow"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -135,7 +135,7 @@
                                                     <constraint firstAttribute="width" constant="24" id="MZE-WK-piO"/>
                                                     <constraint firstAttribute="height" constant="32" id="rL1-i7-UlI"/>
                                                 </constraints>
-                                                <state key="normal" image="location.png"/>
+                                                <state key="normal" image="location"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSU-oP-nLP">
                                                 <rect key="frame" x="80" y="6" width="20" height="32"/>
@@ -252,7 +252,7 @@
     </scenes>
     <resources>
         <image name="dismiss" width="15" height="15"/>
-        <image name="downArrow.png" width="9" height="4"/>
-        <image name="location.png" width="12" height="15"/>
+        <image name="downArrow" width="9" height="4"/>
+        <image name="location" width="12" height="15"/>
     </resources>
 </document>

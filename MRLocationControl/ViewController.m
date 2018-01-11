@@ -62,7 +62,13 @@
     self.locationControl.locationCompletion = ^(MRLocationControl *locationControl, CLPlacemark *placemark, NSError *error) {
         
         if (error) {
-            NSLog(@"定位失败: %@", error);
+            
+            if ([locationControl locateAuthorizationStatusDetection:NO]) {
+                NSLog(@"定位失败,因为其他原因,很可能由于GPS信号弱或无网络");
+            } else {
+                NSLog(@"定位失败,因为定位不可用");
+            }
+            
         } else {
             NSLog(@"\n\n地标: %@\n", placemark);
             NSLog(@"\n定位成功: %@", placemark.addressDictionary.stringWithUTF8);
@@ -91,21 +97,13 @@
 - (void)start
 {
     if (!self.selectedCity) {
-        
         [self.locationControl startLocate];
-        
-        [UIView animateWithDuration:1 delay:0.3 options:UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.locationControl.leftButton.transform = CGAffineTransformMakeTranslation(0, 4);
-        } completion:NULL];
     }
 }
 
 - (void)stop
 {
     [self.locationControl stopLoacte];
-    
-    self.locationControl.leftButton.transform = CGAffineTransformIdentity;
-    [self.locationControl.leftButton.layer removeAllAnimations];
 }
 
 - (void)viewDidAppear:(BOOL)animated

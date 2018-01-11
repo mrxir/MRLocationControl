@@ -32,6 +32,8 @@ typedef void(^MRLocationCompletion)(MRLocationControl *locationControl, CLPlacem
 
 @property (nonatomic, weak) IBOutlet UIButton *rightButton;
 
+- (BOOL)locateAuthorizationStatusDetection:(BOOL)showAlert;
+
 - (void)startLocate;
 
 - (void)stopLoacte;

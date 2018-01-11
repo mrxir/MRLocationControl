@@ -89,7 +89,7 @@
 
 - (void)startLocate
 {
-    if ([self locateAuthorizationStatusDetection]) {
+    if ([self locateAuthorizationStatusDetection:YES]) {
         [self requestUserLocation];
     }
     
@@ -113,7 +113,7 @@
     if (self.isObserverEnabled) [self startLocate];
 }
 
-- (BOOL)locateAuthorizationStatusDetection
+- (BOOL)locateAuthorizationStatusDetection:(BOOL)showAlert
 {
     BOOL locationServicesEnabled = NO;
     
@@ -126,25 +126,29 @@
     if (![CLLocationManager locationServicesEnabled]) {
         
         locationServicesEnabled = NO;
-
-        if (![@"locationServicesEnabled" isEqualToString:self.displayingAlertStatus]) {
+        
+        if (showAlert) {
             
-            self.displayingAlert.delegate = nil;
-            [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
-            
-            NSString *alertTitle = [NSString stringWithFormat:@"定位服务未开启"];
-            NSString *message = [NSString stringWithFormat:@"\n请前往\n\n⚙️设置 → ✋隐私 → 📍定位服务\n\n开启 [定位服务] 后\n\n返回 \"%@\"", appName];
-            
-            NSString *cancelTitle = self.isAlwaysDisplayAlertWhenLocationDisabled ? nil : @"关闭";
-            
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
-                                                            message:message
-                                                           delegate:self
-                                                  cancelButtonTitle:cancelTitle
-                                                  otherButtonTitles:@"前往设置", nil];
-            [alert show];
-            self.displayingAlert = alert;
-            self.displayingAlertStatus = @"locationServicesEnabled";
+            if (![@"locationServicesEnabled" isEqualToString:self.displayingAlertStatus]) {
+                
+                self.displayingAlert.delegate = nil;
+                [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
+                
+                NSString *alertTitle = [NSString stringWithFormat:@"定位服务未开启"];
+                NSString *message = [NSString stringWithFormat:@"\n请前往\n\n⚙️设置 → ✋隐私 → 📍定位服务\n\n开启 [定位服务] 后\n\n返回 \"%@\"", appName];
+                
+                NSString *cancelTitle = self.isAlwaysDisplayAlertWhenLocationDisabled ? nil : @"关闭";
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                                message:message
+                                                               delegate:self
+                                                      cancelButtonTitle:cancelTitle
+                                                      otherButtonTitles:@"前往设置", nil];
+                [alert show];
+                self.displayingAlert = alert;
+                self.displayingAlertStatus = @"locationServicesEnabled";
+                
+            }
             
         }
 
@@ -164,62 +168,73 @@
             
             locationServicesEnabled = NO;
             
-            if (![@"kCLAuthorizationStatusRestricted" isEqualToString:self.displayingAlertStatus]) {
+            if (showAlert) {
                 
-                self.displayingAlert.delegate = nil;
-                [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
+                if (![@"kCLAuthorizationStatusRestricted" isEqualToString:self.displayingAlertStatus]) {
+                    
+                    self.displayingAlert.delegate = nil;
+                    [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
+                    
+                    NSString *alertTitle = [NSString stringWithFormat:@"位置信息访问受限"];
+                    NSString *alertMessage = [NSString stringWithFormat:@"\n当前无法访问该设备的位置信息，并且您没有权限改变此状态。\n\n\"%@\"很可能处于\"访问限制\"中，并且关闭了\"定位服务\"功能，您可以前往\n\n⚙️设置 → ⚙️通用 → 访问限制\n\n找到\"隐私\"：进入 \"定位服务\"\n允许\"%@\"访问位置信息后返回\n\n如果这依然解决不了您的问题，建议您致电\"苹果中国\"以寻求帮助\n", appName, appName];
+                    
+                    NSString *cancelTitle = self.isAlwaysDisplayAlertWhenLocationDisabled ? nil : @"关闭";
+                    
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                                    message:alertMessage
+                                                                   delegate:self
+                                                          cancelButtonTitle:cancelTitle
+                                                          otherButtonTitles:@"前往设置", nil];
+                    [alert show];
+                    self.displayingAlert = alert;
+                    self.displayingAlertStatus = @"kCLAuthorizationStatusRestricted";
+                    
+                }
                 
-                NSString *alertTitle = [NSString stringWithFormat:@"位置信息访问受限"];
-                NSString *alertMessage = [NSString stringWithFormat:@"\n当前无法访问该设备的位置信息，并且您没有权限改变此状态。\n\n\"%@\"很可能处于\"访问限制\"中，并且关闭了\"定位服务\"功能，您可以前往\n\n⚙️设置 → ⚙️通用 → 访问限制\n\n找到\"隐私\"：进入 \"定位服务\"\n允许\"%@\"访问位置信息后返回\n\n如果这依然解决不了您的问题，建议您致电\"苹果中国\"以寻求帮助\n", appName, appName];
-                
-                NSString *cancelTitle = self.isAlwaysDisplayAlertWhenLocationDisabled ? nil : @"关闭";
-
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
-                                                                message:alertMessage
-                                                               delegate:self
-                                                      cancelButtonTitle:cancelTitle
-                                                      otherButtonTitles:@"前往设置", nil];
-                [alert show];
-                self.displayingAlert = alert;
-                self.displayingAlertStatus = @"kCLAuthorizationStatusRestricted";
-
             }
             
         } else if (status == kCLAuthorizationStatusDenied) {
             
             locationServicesEnabled = NO;
             
-            if (![@"kCLAuthorizationStatusDenied" isEqualToString:self.displayingAlertStatus]) {
+            if (showAlert) {
                 
-                self.displayingAlert.delegate = nil;
-                [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
-                
-                NSString *alertTitle = [NSString stringWithFormat:@"请允许\"%@\"访问您的位置信息", appName];
-                NSString *alertMessage = [NSString stringWithFormat:@"\n请前往\n\n⚙️设置 → ✋隐私 → 📍定位服务\n\n允许 \"%@\" 访问您的位置信息。\n\n%@\n", appName, alwaysAndWhenInUse];
-                
-                NSString *cancelTitle = self.isAlwaysDisplayAlertWhenLocationDisabled ? nil : @"关闭";
-
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
-                                                                message:alertMessage
-                                                               delegate:self
-                                                      cancelButtonTitle:cancelTitle
-                                                      otherButtonTitles:@"前往更改", nil];
-                [alert show];
-                self.displayingAlert = alert;
-                self.displayingAlertStatus = @"kCLAuthorizationStatusDenied";
-                
+                if (![@"kCLAuthorizationStatusDenied" isEqualToString:self.displayingAlertStatus]) {
+                    
+                    self.displayingAlert.delegate = nil;
+                    [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
+                    
+                    NSString *alertTitle = [NSString stringWithFormat:@"请允许\"%@\"访问您的位置信息", appName];
+                    NSString *alertMessage = [NSString stringWithFormat:@"\n请前往\n\n⚙️设置 → ✋隐私 → 📍定位服务\n\n允许 \"%@\" 访问您的位置信息。\n\n%@\n", appName, alwaysAndWhenInUse];
+                    
+                    NSString *cancelTitle = self.isAlwaysDisplayAlertWhenLocationDisabled ? nil : @"关闭";
+                    
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle
+                                                                    message:alertMessage
+                                                                   delegate:self
+                                                          cancelButtonTitle:cancelTitle
+                                                          otherButtonTitles:@"前往更改", nil];
+                    [alert show];
+                    self.displayingAlert = alert;
+                    self.displayingAlertStatus = @"kCLAuthorizationStatusDenied";
+                    
+                }
             }
             
         } else {
             
             locationServicesEnabled = YES;
             
-            if (self.displayingAlert) {
-                self.displayingAlert.delegate = nil;
-                [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
-                self.displayingAlert = nil;
+            if (showAlert) {
+                
+                if (self.displayingAlert) {
+                    self.displayingAlert.delegate = nil;
+                    [self.displayingAlert dismissWithClickedButtonIndex:0 animated:YES];
+                    self.displayingAlert = nil;
+                }
+                if (self.displayingAlertStatus) self.displayingAlertStatus = nil;
+                
             }
-            if (self.displayingAlertStatus) self.displayingAlertStatus = nil;
             
         }
         
