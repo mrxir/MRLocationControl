@@ -21,6 +21,4 @@
 
 #import "UINavigationBar+Extension.h"
 
-#import "MRImageView.h"
-
 #endif /* MRUIKit_h */

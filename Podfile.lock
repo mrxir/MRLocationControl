@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   MRFramework:
-    :commit: 00218051d2510c8690f1fb0f60bb395e6258760c
+    :commit: e8dfe47cc8faa66b43e4714af8e51f21056dc874
     :git: https://github.com/mrxir/MRFramework.git
   MRSearchBar:
     :commit: 611e14f41d5fe9a82d75782cc59068d4862c565e

@@ -15,46 +15,46 @@
             <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="Lt5-AO-KGl">
-                    <rect key="frame" x="6" y="6" width="24" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="24" id="02l-fE-42w"/>
-                        <constraint firstAttribute="height" constant="32" id="8FG-Tp-Vx5"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wF-Hh-OuK">
-                    <rect key="frame" x="30" y="7" width="46" height="30"/>
+                    <rect key="frame" x="29" y="7" width="46" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="nnE-sj-jfm"/>
                     </constraints>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="北京市"/>
+                    <state key="normal" title="定位中"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="sBM-1v-cgs">
-                    <rect key="frame" x="76" y="6" width="24" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq9-4K-N16">
+                    <rect key="frame" x="5" y="6" width="24" height="32"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="24" id="Ccc-8I-ODC"/>
-                        <constraint firstAttribute="height" constant="32" id="hPn-Ot-o2v"/>
+                        <constraint firstAttribute="width" constant="24" id="VUV-9X-0ml"/>
+                        <constraint firstAttribute="height" constant="32" id="xih-jI-El0"/>
                     </constraints>
-                </imageView>
+                    <state key="normal" image="location"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVP-6k-VTH">
+                    <rect key="frame" x="75" y="6" width="20" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="7bT-13-5DY"/>
+                        <constraint firstAttribute="width" constant="20" id="LYb-p5-0ZP"/>
+                    </constraints>
+                    <state key="normal" image="downArrow"/>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="sBM-1v-cgs" secondAttribute="trailing" id="1dr-Cm-Dd8"/>
-                <constraint firstItem="7wF-Hh-OuK" firstAttribute="leading" secondItem="Lt5-AO-KGl" secondAttribute="trailing" id="BNh-YI-Rw3"/>
-                <constraint firstItem="sBM-1v-cgs" firstAttribute="leading" secondItem="7wF-Hh-OuK" secondAttribute="trailing" id="F5E-Bh-1Mv"/>
-                <constraint firstItem="sBM-1v-cgs" firstAttribute="centerY" secondItem="593-e3-3i8" secondAttribute="centerY" id="XXE-4O-f4B"/>
-                <constraint firstItem="Lt5-AO-KGl" firstAttribute="centerY" secondItem="593-e3-3i8" secondAttribute="centerY" id="aTo-BV-dul"/>
-                <constraint firstItem="Lt5-AO-KGl" firstAttribute="leading" secondItem="593-e3-3i8" secondAttribute="leading" constant="6" id="vZE-LM-P5K"/>
+                <constraint firstItem="Zq9-4K-N16" firstAttribute="centerY" secondItem="593-e3-3i8" secondAttribute="centerY" id="3da-x2-dpv"/>
+                <constraint firstItem="7wF-Hh-OuK" firstAttribute="leading" secondItem="Zq9-4K-N16" secondAttribute="trailing" id="LbA-zQ-TPN"/>
+                <constraint firstItem="vVP-6k-VTH" firstAttribute="centerY" secondItem="593-e3-3i8" secondAttribute="centerY" id="bJo-En-P4i"/>
+                <constraint firstItem="Zq9-4K-N16" firstAttribute="leading" secondItem="593-e3-3i8" secondAttribute="leading" constant="5" id="oER-Uy-MwU"/>
+                <constraint firstItem="vVP-6k-VTH" firstAttribute="leading" secondItem="7wF-Hh-OuK" secondAttribute="trailing" id="vvE-3w-FmM"/>
                 <constraint firstItem="7wF-Hh-OuK" firstAttribute="centerY" secondItem="593-e3-3i8" secondAttribute="centerY" id="xeP-ia-HZj"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="leftImageView" destination="Lt5-AO-KGl" id="3T4-O8-mrb"/>
-                <outlet property="rightImageView" destination="sBM-1v-cgs" id="6qO-PP-BeN"/>
+                <outlet property="leftButton" destination="Zq9-4K-N16" id="j9v-xn-WGO"/>
+                <outlet property="rightButton" destination="vVP-6k-VTH" id="hwG-E5-Epn"/>
                 <outlet property="titleButton" destination="7wF-Hh-OuK" id="CBV-Ma-U7r"/>
             </connections>
-            <point key="canvasLocation" x="-255" y="29"/>
+            <point key="canvasLocation" x="-156" y="29"/>
         </view>
     </objects>
     <resources>

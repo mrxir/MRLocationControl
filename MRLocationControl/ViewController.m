@@ -55,7 +55,7 @@
     
     [self.locationControl.titleButton addTarget:self action:@selector(showLocationController) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.locationControl.titleButton setTitle:@"定位中..." forState:UIControlStateNormal];
+    [self.locationControl.titleButton setTitle:@"定位中" forState:UIControlStateNormal];
     self.locationControl.alwaysDisplayAlertWhenLocationDisabled = YES;
     self.locationControl.alwaysUseLocation = YES;
     self.locationControl.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
@@ -95,7 +95,7 @@
         [self.locationControl startLocate];
         
         [UIView animateWithDuration:1 delay:0.3 options:UIViewAnimationOptionRepeat|UIViewAnimationOptionCurveEaseInOut animations:^{
-            self.locationControl.leftImageView.transform = CGAffineTransformMakeTranslation(0, 4);
+            self.locationControl.leftButton.transform = CGAffineTransformMakeTranslation(0, 4);
         } completion:NULL];
     }
 }
@@ -104,8 +104,8 @@
 {
     [self.locationControl stopLoacte];
     
-    self.locationControl.leftImageView.transform = CGAffineTransformIdentity;
-    [self.locationControl.leftImageView.layer removeAllAnimations];
+    self.locationControl.leftButton.transform = CGAffineTransformIdentity;
+    [self.locationControl.leftButton.layer removeAllAnimations];
 }
 
 - (void)viewDidAppear:(BOOL)animated

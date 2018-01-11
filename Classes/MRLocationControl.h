@@ -28,9 +28,9 @@ typedef void(^MRLocationCompletion)(MRLocationControl *locationControl, CLPlacem
 
 @property (nonatomic, weak) IBOutlet UIButton *titleButton;
 
-@property (nonatomic, weak) IBOutlet UIImageView *leftImageView;
+@property (nonatomic, weak) IBOutlet UIButton *leftButton;
 
-@property (nonatomic, weak) IBOutlet UIImageView *rightImageView;
+@property (nonatomic, weak) IBOutlet UIButton *rightButton;
 
 - (void)startLocate;
 

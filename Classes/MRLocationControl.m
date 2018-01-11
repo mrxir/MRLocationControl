@@ -230,6 +230,15 @@
 
 #pragma mark - private method
 
+- (NSString *)pathForResource:(NSString *)resource type:(NSString *)type
+{
+    NSBundle *imageBundle = nil;
+    NSBundle *bundle = [NSBundle bundleForClass:[MRLocationControl class]];
+    NSURL *url = [bundle URLForResource:NSStringFromClass([MRLocationControl class]) withExtension:@"bundle"];
+    imageBundle = [NSBundle bundleWithURL:url];
+    return [imageBundle pathForResource:resource ofType:type];
+}
+
 - (void)requestUserLocation
 {
     if (!self.isLocationServiceUpdating) {

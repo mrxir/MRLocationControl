@@ -16,7 +16,6 @@
 #import "NSObject+Extension.h"
 #import "NSString+Extension.h"
 #import "NSURL+Extension.h"
-#import "MRImageView.h"
 #import "MRUIKit.h"
 #import "UIApplication+Extension.h"
 #import "UIControl+Extension.h"
